@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/navigation";
 import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
@@ -17,6 +18,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Toaster position="top-right" richColors />
+        <Navbar />
         {children}
       </body>
     </html>
